@@ -31,8 +31,8 @@ func makeReadme(filename string) error {
 	date := time.Now().Format("2 Jan 2006")
 
 	// Whisk together static and dynamic content until stiff peaks form
-	blog := "- ✨ Read my latest blog post: **[" + rssItem.Title + "](" + rssItem.Link + ")**"
-	updated := "Last updated by magic on " + date + "."
+	blog := "Read my latest blog post: **[" + rssItem.Title + "](" + rssItem.Link + ")**"
+	updated := "Last updated by " + date + "."
 	data := fmt.Sprintf("%s%s\n\n%s\n", stringyContent, blog, updated)
 
 	// Prepare file with a light coating of os
