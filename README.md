@@ -6,7 +6,7 @@
  
  
 
-<p align='center'>This my latest blog post: </p> <a align='center' href='https://blog.tulpas.dev//2020/SARS-CoV-2-Analysis/'> A SARS-CoV-2 analysis</a>. 
+<p align='center'>This my latest blog post: </p> <a align='center' href='https://blog.tulpas.dev//2020/SARS-CoV-2-Analysis/'> <p align='center'>A SARS-CoV-2 analysis</p> </a>. 
  
 
 
