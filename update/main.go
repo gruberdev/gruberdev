@@ -19,10 +19,6 @@ func makeReadme(filename string) error {
 	// Get the freshest item
 	blogItem := feed.Items[0]
 
-	wc, err := fp.ParseURL("https://blog.tulpas.dev/feed.xml")
-	if err != nil {
-		log.Fatalf("error getting feed: %v", err)
-	}
 
 	rand.Seed(time.Now().UnixNano())
 	date := time.Now().Format("2 Jan 2006")
