@@ -12,6 +12,7 @@
 
 <sub> <p align='center'> Last updated on: 19 Dec 2020.</p> </sub> 
  
- <p align='center'>
+ 
  <img align='center' src='./githubterm.svg' /> 
+ 
  </p>
