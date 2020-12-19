@@ -6,12 +6,11 @@
  
  
 
-This my latest blog post: **<a href='https://blog.tulpas.dev//2020/SARS-CoV-2-Analysis/'> A SARS-CoV-2 analysis</a>. 
+<p align='center'>This my latest blog post: </p>**<a align='center' href='https://blog.tulpas.dev//2020/SARS-CoV-2-Analysis/'> A SARS-CoV-2 analysis</a>. 
  
 
 
-<sub>Last updated on: 19 Dec 2020.</sub> 
- <p align='center'> 
+<sub> <p align='center'> Last updated on: 19 Dec 2020.</sub> 
  
  <img align='center' src='./githubterm.svg' /> 
  
