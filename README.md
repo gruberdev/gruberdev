@@ -13,6 +13,4 @@
  
  <p align='center'> 
  
- <img align='center' src='./githubterm.svg' /> 
- 
  </p>
