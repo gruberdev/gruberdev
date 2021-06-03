@@ -8,7 +8,7 @@
  
 
 
-<p align='center'><sub><sup>This README was last updated on: 3 Jun 2021.</sub></sup></p> 
+<sub> <p align='center'> <sup>This README was last updated on: 3 Jun 2021.</sup> </p> </sub> 
  
  
  <p align='center'> 
