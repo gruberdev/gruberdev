@@ -1,22 +1,14 @@
-<svg width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
  <style>
-  path {
-   fill: black;
-   stroke: black;
-   stroke-width: 0.1px;
-  }
-
   @media (prefers-color-scheme: dark) {
    path {
     fill: white;
-    stroke: white;
    }
   }
 
   @media (prefers-color-scheme: light) {
    path {
     fill: black;
-    stroke: black;
    }
   }
  </style>
