@@ -4,11 +4,11 @@
  
  
 
-<p align='center'>This my latest blog post: </p> <a align='center' href='https://blog.tulpas.dev//2020/Dont-blink-or-you-might-miss-it/'> <p align='center'>Don't blink, or you might miss it</p> </a. 
+<p align='center'>The last article I've written: </p> <a align='center' href='https://xn--qck4cud2cb.com/posts/dont-blink/'> <p align='center'>Don't blink, or you might miss it</p> </a. 
  
 
 
-<sub> <p align='center'> Last updated on: 2 Jun 2021.</p> </sub> 
+<sub> <p align='center'> This README was last updated on: 3 Jun 2021.</p> </sub> 
  
  
  <p align='center'> 
