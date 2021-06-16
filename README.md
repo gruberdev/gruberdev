@@ -6,7 +6,7 @@
  
  
 
-<p align='center'>The last article I've written: </p> <a align='center' href='https://xn--qck4cud2cb.com/posts/dont-blink/'> <p align='center'>Don't blink, or you might miss it</p> </a. 
+<p align='center'>The last article I've written: </p> <a align='center' href='https://me.xn--qck4cud2cb.com/posts/dont-blink/'> <p align='center'>Don't blink, or you might miss it</p> </a. 
  
 
 
