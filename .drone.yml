@@ -9,8 +9,8 @@ trigger:
     - nightly
 
 steps:
-- name: test
-  image: golang:latest
-  commands:
-  - go run main.go
+  - name: test
+    image: golang:latest
+    commands:
+      - go run main.go
  
