@@ -1,0 +1,15 @@
+kind: pipeline
+type: docker
+name: update README
+trigger:
+  event:
+    - cron
+    - push
+  cron:
+    - nightly
+
+steps:
+- name: test
+  image: golang:latest
+  commands:
+  - go run main.go
