@@ -29,6 +29,12 @@ steps:
     image: appleboy/drone-git-push
     settings:
       branch: main
+      author_name: 
+        from_secret: github_user
+      empty_commit: "Nothing to commit. No changes detected."
+      commit_message: "Updated README content"
+      author_email:
+        from_secret: github_email
       ssh_key:
         from_secret: ssh_privkey
       remote: git@github.com:gruberdev/gruberdev.git
