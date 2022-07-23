@@ -4,8 +4,17 @@ type: docker
 name: ReadMe
 trigger:
   event:
-    - push
-    - pull_request
+    include:
+      - push
+    exclude:
+      - pull_request
+  branch:
+    - main
+
+node:
+  server: home
+  arm: no
+  docker: yes
 
 steps:
   - name: Build
@@ -27,3 +36,4 @@ steps:
       remote: git@github.com:gruberdev/gruberdev.git
       force: false
       commit: true
+
