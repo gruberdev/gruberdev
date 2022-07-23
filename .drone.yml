@@ -1,14 +1,17 @@
 ---
 kind: pipeline
 type: docker
-name: readme
+name: ReadMe
 trigger:
   event:
-    include:
-      - push
-      - pull_request
+    - push
+    - pull_request
+    - cron
+  cron:
+    - nightly
+
 steps:
-  - name: test
+  - name: Build
     image: golang:latest
     commands:
       - cd update && go run main.go
@@ -17,7 +20,8 @@ steps:
       - git config --global --add url."git@github.com:".insteadOf "https://github.com/"
       - git add -A
       - git diff-index --quiet HEAD || git commit -m 'Update dynamic content'
-  - name: git-push
+
+  - name: Remote Update
     image: appleboy/drone-git-push
     settings:
       branch: main
