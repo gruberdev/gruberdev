@@ -10,23 +10,19 @@ trigger:
 steps:
   - name: test
     image: golang:latest
-    environment:
-      SSH_KEY:
-        from_secret: ssh_privkey
     commands:
       - cd update && go run main.go
-      - mkdir /root/.ssh
-      - echo -n "$SSH_KEY" > /root/.ssh/id_ed25519
-      - cat /root/.ssh/id_ed25519
-      - chmod 600 /root/.ssh/id_ed25519
-      - touch /root/.ssh/known_hosts
-      - chmod 600 /root/.ssh/known_hosts
-      - ssh-keyscan -H github.com > /etc/ssh/ssh_known_hosts 2> /dev/null
-      - ls
-      - cd ..
       - git config user.name "gruberdev"
       - git config user.email "gruberdev@users.noreply.github.com"
       - git config --global --add url."git@github.com:".insteadOf "https://github.com/"
       - git add -A
       - git diff-index --quiet HEAD || git commit -m 'Update dynamic content'
-      - git push --set-upstream origin main
+  - name: git-push
+    image: appleboy/drone-git-push
+    settings:
+      branch: main
+      ssh_key:
+        from_secret: ssh_privkey
+      remote: git@github.com:gruberdev/gruberdev.git
+      force: false
+      commit: true
