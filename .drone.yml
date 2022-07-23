@@ -6,9 +6,6 @@ trigger:
   event:
     - push
     - pull_request
-    - cron
-  cron:
-    - nightly
 
 steps:
   - name: Build
