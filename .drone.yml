@@ -10,6 +10,19 @@ trigger:
 steps:
   - name: test
     image: golang:latest
+    environment:
+      SSH_KEY:
+        from_secret: ssh_privkey
     commands:
       - cd update && go run main.go
- 
+      - mkdir /root/.ssh
+      - echo -n "$SSH_KEY" > /root/.ssh/id_ed25519
+      - cat /root/.ssh/id_ed25519
+      - chmod 600 /root/.ssh/id_ed25519
+      - touch /root/.ssh/known_hosts
+      - chmod 600 /root/.ssh/known_hosts
+      - ssh-keyscan -H github.com > /etc/ssh/ssh_known_hosts 2> /dev/null
+      - git config user.name "gruberdev"
+      - git config user.email "gruberdev@users.noreply.github.com"
+      - git add .
+      - git commit -am "Update dynamic content
