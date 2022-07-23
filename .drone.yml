@@ -11,5 +11,5 @@ steps:
   - name: test
     image: golang:latest
     commands:
-      - go run main.go
+      - cd update && go run main.go
  
