@@ -26,6 +26,6 @@ steps:
       - cd ..
       - git config user.name "gruberdev"
       - git config user.email "gruberdev@users.noreply.github.com"
-      - git add .
-      - git commit -am "Update dynamic content"
+      - git add -A
+      - git diff-index --quiet HEAD || git commit -m 'Update dynamic content'
       - git push
