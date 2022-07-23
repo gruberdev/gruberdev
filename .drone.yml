@@ -15,17 +15,15 @@ node:
   server: home
   arm: no
   docker: yes
+platform:
+  os: linux
+  arch: amd64
 
 steps:
   - name: Build
     image: golang:latest
     commands:
       - cd update && go run main.go
-      - git config user.name "gruberdev"
-      - git config user.email "gruberdev@users.noreply.github.com"
-      - git config --global --add url."git@github.com:".insteadOf "https://github.com/"
-      - git add -A
-      - git diff-index --quiet HEAD || git commit -m 'Update dynamic content'
 
   - name: Remote Update
     image: appleboy/drone-git-push
