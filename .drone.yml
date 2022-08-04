@@ -24,7 +24,6 @@ steps:
     image: golang:latest
     commands:
       - cd update && go run main.go
-
   - name: Remote Update
     image: appleboy/drone-git-push
     settings:
