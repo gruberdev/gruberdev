@@ -17,7 +17,6 @@ func makeReadme(filename string) error {
 	if err != nil {
 		log.Fatalf("error getting feed: %v", err)
 	}
-	// Get the freshest item
 	blogItem := feed.Items[0]
 
 	rand.Seed(time.Now().UnixNano())
