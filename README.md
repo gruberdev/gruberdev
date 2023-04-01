@@ -4,11 +4,11 @@
  
  
 
-<p align='center'>The last article I've written: </p> <a align='center' href='https://me.xn--qck4cud2cb.com/posts/dont-blink/'> <p align='center'>Don't blink, or you might miss it</p> </a. 
+<p align='center'>The last article I've written: </p> <a align='center' href='https://rssproxy.migor.org/?reason=response.contentType must not be null&url=https%3A%2F%2Fme.xn--qck4cud2cb.com%2Fposts%2F'> <p align='center'>Maintenance required</p> </a. 
  
 
 
-<sub> <p align='center'> <sup>This README was last updated on: 31 Mar 2023.</sup> </p> </sub> 
+<sub> <p align='center'> <sup>This README was last updated on: 1 Apr 2023.</sup> </p> </sub> 
  
  
  <p align='center'> 
